@@ -30,7 +30,13 @@
 
     &__image-block{
         flex-basis: 48%;
-        border-radius: 40px;
-        overflow: hidden;
+        img{
+            border-radius: 40px;
+            overflow: hidden;
+        }
+    }
+
+    &__text-block{
+        flex-basis: 48%;
     }
 }
