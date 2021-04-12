@@ -3,12 +3,17 @@
 // vars
 @import 'vars';
 
+@import 'vendor/fonts';
+
 html{
 
 }
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: $primary;
+    color: #F0F0F0;
+    font-size: 15px;
 }
 
 *,
@@ -29,3 +34,4 @@ body{
 }
 
 // Components
+@import "components/intro";
