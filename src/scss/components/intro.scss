@@ -3,10 +3,23 @@
         height: 100vh;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
+        position: relative;
     }
     &__title{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 2;
         font-family: 'Billy';
         font-size: 250px;
         line-height: .8;
+    }
+
+    &__image{
+        transform: rotate(5deg);
+        border-radius: 40px;
+        overflow: hidden;
     }
 }

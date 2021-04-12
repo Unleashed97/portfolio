@@ -1,0 +1,33 @@
+.portfolio-nav{
+    display: flex;
+    justify-content: center;
+    &__list{
+        
+        display: inline-flex;
+        justify-content: center;
+        border-radius: 40px;
+        border: 1px solid $font-main;
+    }
+
+    &__item{
+        padding: 20px 40px;
+        // font-family: 'Billy';
+        // font-size: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background .2s linear,
+            color .2s linear;
+
+        &:first-child{
+            border-radius: 40px 0 0 40px;
+        }
+        &:last-child{
+            border-radius: 0 40px 40px 0;
+        }
+
+        &:hover{
+            background-color: $font-main;
+            color: black;
+        }
+    }
+}
