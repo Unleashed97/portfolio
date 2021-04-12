@@ -1,0 +1,45 @@
+.social{
+    &__list{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item{
+        margin-right: 30px;
+
+        position: relative;
+        transition: background .2s linear;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__link{
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 3px solid rgba($font-main, .5);
+        &:hover{
+            background-color: rgba($font-main, .8);
+            .social__github, .social__instagram, .social__mail, .social__telegram{
+                fill: rgba(#000, .8);
+            }
+        }
+    }
+
+    &__github, &__instagram, &__mail, &__telegram{
+        fill: rgba($font-main, .5);
+        transition: all .2s linear;
+    }
+}
