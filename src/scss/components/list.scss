@@ -1,0 +1,41 @@
+.list {
+    &__item{
+        padding-left: 30px;
+        margin-bottom: 20px;
+    
+        position: relative;
+        &::before {
+            position: absolute;
+            // top: 50%;
+            top: 15px;
+            left: 0;
+            // transform: translateY(-50%);
+            z-index: 1;
+    
+            display: block;
+            content: "";
+            background-color: $font-main;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .list__text{
+            text-indent: 0;
+        }
+    }
+
+    &__text{
+        text-indent: 30px;
+        font-size: 20px;
+        line-height: 1.8;
+
+        b{
+            font-weight: 700;
+        }
+    }
+}
